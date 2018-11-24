@@ -5,6 +5,8 @@ FROM rhscl/s2i-core-rhel7:1
 # Volumes:
 #  * /var/opt/rh/rh-nginx112/log/nginx/ - Storage for logs
 
+ADD nginx-proxy.conf /opt/app-root/etc/nginx.default.d/nginx-proxy.conf
+
 EXPOSE 8080
 EXPOSE 8443
 
